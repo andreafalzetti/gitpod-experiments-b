@@ -1,0 +1,6 @@
+tasks:
+  - command: curl lama.sh | sh
+ 
+ports:
+  - port: 8080
+    onOpen: open-browser
