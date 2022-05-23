@@ -1,6 +1,7 @@
 tasks:
-  - command: curl lama.sh | sh
+  - command: npx --yes live-server .
  
 ports:
   - port: 8080
     onOpen: open-browser
+    visibility: public    
