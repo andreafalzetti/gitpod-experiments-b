@@ -1,7 +1,17 @@
 tasks:
   - command: npx --yes live-server .
+  - command: npx --yes live-server --port 8081 .
+  - command: npx --yes live-server --port 8082 .
+  - command: npx --yes live-server --port 8083 .  
  
 ports:
   - port: 8080
     onOpen: open-browser
-    visibility: public    
+    visibility: public
+  - port: 8081
+    onOpen: notify
+    visibility: public
+  - port: 8082
+    onOpen: ignore
+  - port: 8083
+    onOpen: notify
