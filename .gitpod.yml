@@ -1,9 +1,9 @@
 tasks:
-  - command: npm i -g live-server
-  - command: live-server .
-  - command: live-server --port=8081 .
-  - command: live-server --port=8082 .
-  - command: live-server --port=8083 .
+  - command: npm i -g live-server && gp sync-done live-server
+  - command: gp sync-await live-server && live-server .
+  - command: gp sync-await live-server && live-server --port=8081 .
+  - command: gp sync-await live-server && live-server --port=8082 .
+  - command: gp sync-await live-server && live-server --port=8083 .
  
 ports:
   - port: 8080
