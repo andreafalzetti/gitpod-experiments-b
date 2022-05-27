@@ -8,10 +8,8 @@ tasks:
 ports:
   - port: 8080
     onOpen: open-browser
-    visibility: public
   - port: 8081
     onOpen: notify
-    visibility: public
   - port: 8082
     onOpen: ignore
   - port: 8083
